@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family:"work sans";
+    width:100%;
+    background-color: hsl(275, 100%, 97%);
+    background:url("assets/images/background-pattern-desktop.svg") repeat-x ;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 100vh;
+    margin:0;
+
+}
+.cont>img{
+    width:2rem;
+    margin-top: 30px;
+    margin-left:20px;
+    margin-right:20px;
+    float: left;
+}
+h1{
+    color:hsl(292, 42%, 14%);
+    font-size: 40px;
+    font-weight: 700;
+}
+.cont{
+    background-color:#fff;
+    width:100%;
+   max-width:500px;
+    border-radius: 10px;
+    padding:20px;
+    margin-inline: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button{
+    background-color:hsl(0, 0%, 100%) ;
+    border-style:hidden ;
+}
+
+button img{
+width:1.5rem;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+h2{ display:flex;
+    align-items: center;
+    justify-content: space-between ;
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    color:hsl(292, 42%, 14%);
+}
+p{
+    margin-left: 20px;
+    margin-right:20px;
+    /*padding:10px;*/
+    color:hsl(292, 16%, 49%);
+    display: none;
+}
+.cont div{
+    border-top: 1px solid hsl(300, 4%, 87%) ;
+} 
+.q{
+    display: flex;
+    justify-content: space-between;
+}
+.active p { display: block; }
+.active button img { transform: rotate(45deg); }
+@media (max-width: 480px) 
+{ 
+.cont { padding: 10px; margin: 10px; }
+ h1 { font-size: 20px; } 
+ h2 { font-size: 12px; } 
+ button img { width: 1rem; } 
+}
+
